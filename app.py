@@ -36,7 +36,7 @@ if page == "Galerie":
                     st.rerun()
 st.rerun()
 
-st.sidebar.success(f"Angemeldet als {user['email']}"
+st.sidebar.success(f"Angemeldet als {user['email']}")
 st.sidebar.success(f"Angemeldet als {user['email']}")
 
 page = st.sidebar.radio("Navigation", ["Galerie", "Charakter erstellen", "Meine Charaktere"])  
