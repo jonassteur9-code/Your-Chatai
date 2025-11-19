@@ -12,7 +12,8 @@ supabase = create_client(supabase_url, supabase_key) if supabase_url and supabas
 
 # Fake-Login bis Supabase läuft
 if "user" not in st.session_state:
-    user = st.session_state.user
+    st.session_state.user = {"email": "du@charai.deutsch"}
+user = st.session_state.user
 else:
     st.session_state.user = {"email": "du@charai.deutsch"}
     user = st.session_state.user
