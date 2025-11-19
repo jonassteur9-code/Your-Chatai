@@ -2,4 +2,5 @@ streamlit
 supabase
 openai
 anthropic
-groq
+groq-python
+pillow
