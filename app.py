@@ -34,10 +34,10 @@ if page == "Galerie":
                 if st.button("Chatten", key=f"chat_{char['id']}"):
                     st.session_state.active_char = char
                     st.rerun()
-    st.rerun()
+st.rerun()
 
+st.sidebar.success(f"Angemeldet als {user['email']}"
 st.sidebar.success(f"Angemeldet als {user['email']}")
-      st.sidebar.success(f"Angemeldet als {user['email']}")
 
 page = st.sidebar.radio("Navigation", ["Galerie", "Charakter erstellen", "Meine Charaktere"])  
 
