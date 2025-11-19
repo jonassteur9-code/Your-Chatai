@@ -14,9 +14,7 @@ supabase = create_client(supabase_url, supabase_key) if supabase_url and supabas
 if "user" not in st.session_state:
     st.session_state.user = {"email": "du@charai.deutsch"}
 user = st.session_state.user
-else:
-    st.session_state.user = {"email": "du@charai.deutsch"}
-    user = st.session_state.user
+
 
 st.sidebar.success(f"Angemeldet als {user['email']}")
 
